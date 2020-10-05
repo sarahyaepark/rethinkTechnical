@@ -23,8 +23,7 @@ Limitations
 
 * Small sample test size with dummy data
 * Using filter each time user types can get extremely slow with 1 million rows of data
-
-- Possible fix: implement sort algorithm that stores data alphabetically --> can then search logarithmically which is much faster
+  * Possible fix: implement sort algorithm that stores data alphabetically --> can then search logarithmically which is much faster
 
 Assumptions
 
