@@ -12,14 +12,12 @@ class SearchData extends React.Component {
   }
   componentDidMount() {
     this.props.fetchUsers()
-    console.log(this.props)
   }
   handleChange(event) {
     let currentLength = event.target.value.length
-    console.log(event.target.value, this)
+    // this block of code checks if the current input matches any of the names in the data as the user inputs
     let match = this.props.users.filter(user => {
       let sub = user.firstName.substring(0, currentLength).toLowerCase()
-      console.log(sub)
       return sub === event.target.value
     })
     this.setState({animal: match[0].firstName})
