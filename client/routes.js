@@ -1,14 +1,19 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter, Route} from 'react-router-dom'
-import {SearchData} from './components'
+import {SearchData, ShortUrl} from './components'
 
 /**
  * COMPONENT
  */
 class Routes extends Component {
   render() {
-    return <Route path="/searchData" component={SearchData} />
+    return (
+      <div>
+        <Route path="/searchData" component={SearchData} />
+        <Route path="/shortenUrl" component={ShortUrl} />
+      </div>
+    )
   }
 }
 
