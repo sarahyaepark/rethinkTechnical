@@ -2,10 +2,10 @@
 
 Sarah Park
 
-**Using an `express`/`sequelize` backend and a `react`/`redux` front end**
+**Using an `express`/`sequelize` backend and a `react`/`redux` front end boilerplate**
 
-**Problem 2: 60 minutes**
-You have over a million rows of data. You need to display this data on a web page along with a search field. Update search results with each character entered by the user. Make sure to call out any assumptions and / or limitations in your solution.
+**Problem 2: 60 minutes
+You have over a million rows of data. You need to display this data on a web page along with a search field. Update search results with each character entered by the user. Make sure to call out any assumptions and / or limitations in your solution.**
 
 Implementation
 
@@ -35,8 +35,8 @@ Assumptions
 * All data is formatted the same way
 * Data only includes first name
 
-**Problem 3: 60 minutes**
-Given any URL, shorten it and return a globally unique URL back to the user. Make sure to call out any assumptions and / or limitations in your solution.
+**Problem 3: 60 minutes
+Given any URL, shorten it and return a globally unique URL back to the user. Make sure to call out any assumptions and / or limitations in your solution.**
 
 Implementation
 
