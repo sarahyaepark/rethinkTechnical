@@ -9,11 +9,16 @@ You have over a million rows of data. You need to display this data on a web pag
 
 Implementation
 
-* npm install
-* npm run seed
+* `npm install`
+* Create our postgres database (only need to do this once! it works for question 3 too)
+```
+export searchdata
+createdb searchdata
+```
+* `npm run seed` to get our dummy data
 * using node version 12.11.1
-* npm run start-dev
-* open localhost:8080/searchData
+* `npm run start-dev`
+**open localhost:8080/searchData**
 
 Review
 
@@ -40,9 +45,9 @@ Given any URL, shorten it and return a globally unique URL back to the user. Mak
 
 Implementation
 
-* npm install
-* npm run start-dev
-* open localhost:8080/shortenUrl
+* `npm install`
+* `npm run start-dev`
+**open localhost:8080/shortenUrl**
 
 Review
 
