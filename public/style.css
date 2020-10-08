@@ -19,3 +19,71 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.individual {
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.searchArea {
+  border: 4px solid #4285f4;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 5px 5px #001b87;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.urlShortener {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.urlForm {
+  padding: 20px;
+  padding-bottom: 20px;
+  border: 4px solid #fad0c4;
+  box-shadow: 5px 5px #f1a7f1;
+  border-radius: 20px;
+  width: 800px;
+  height: 400px;
+}
+
+.formInput {
+  padding: 20px;
+  width: 600px;
+  height: 15px;
+  border: 4px solid #fad0c4;
+  border-radius: 20px;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  background-color: #f1a7f1;
+  border-radius: 20px;
+  border: 4px solid #f1a7f1;
+  color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}

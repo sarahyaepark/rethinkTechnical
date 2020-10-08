@@ -46,7 +46,7 @@ const createApp = () => {
 
   // body parsing middleware
   app.use(express.json())
-  app.use(express.urlencoded({extended: false}))
+  app.use(express.urlencoded({extended: true}))
 
   // compression middleware
   app.use(compression())
@@ -64,6 +64,7 @@ const createApp = () => {
   app.use(passport.session())
 
   // auth and api routes
+  app.use('/s', require('./redirect'))
   app.use('/api', require('./api'))
 
   // static file-serving middleware

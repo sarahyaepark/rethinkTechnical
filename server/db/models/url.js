@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
-const shortId = require('shortid')
-
+// const shortId = require('shortid')
 const Url = db.define('url', {
   original: {
     type: Sequelize.STRING,
@@ -9,8 +8,11 @@ const Url = db.define('url', {
   },
   shortened: {
     type: Sequelize.STRING,
-    allowNull: true,
-    defaultValue: shortId.generate
+    allowNull: true
+  },
+  shortCode: {
+    type: Sequelize.STRING,
+    allowNull: true
   }
 })
 

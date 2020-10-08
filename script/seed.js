@@ -2,20 +2,23 @@
 
 const db = require('../server/db')
 const {User} = require('../server/db/models')
+const Chance = require('chance')
+const chanceObj = new Chance()
 
 async function seed() {
   await db.sync({force: true})
   console.log('db synced!')
 
-  const users = await Promise.all([
-    User.create({firstName: 'Squirrel, arctic ground'}),
-    User.create({firstName: 'Aardwolf'}),
-    User.create({firstName: 'Rat, desert kangaroo'}),
-    User.create({firstName: 'Short-beaked echidna'}),
-    User.create({firstName: 'Woodchuck'}),
-    User.create({firstName: 'Dog'})
-  ])
-
+  const generateAnimals = () => {
+    return {
+      firstName: chanceObj.animal()
+    }
+  }
+  let animals = []
+  for (let i = 0; i < 1000; i++) {
+    animals.push(User.create(generateAnimals()))
+  }
+  const users = await Promise.all(animals)
   console.log(`seeded ${users.length} users`)
   console.log(`seeded successfully`)
 }
