@@ -27,7 +27,6 @@ router.post('/', async (req, res, next) => {
     let unique = false
     // check if shortened url is unique
     while (!unique) {
-      console.log('checking unique')
       unique = validateShortened(shortCode, unique)
     }
     // check user url
