@@ -7,7 +7,6 @@ import Spacer from './Spacer'
 function ShortUrl({postUrl, url}) {
   const {register, handleSubmit} = useForm()
   const onSubmit = data => {
-    console.log(data)
     postUrl({data})
   }
 

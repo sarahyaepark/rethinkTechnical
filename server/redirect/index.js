@@ -5,7 +5,6 @@ module.exports = router
 // these routes sit on top of /s
 router.get('/:code', async (req, res, next) => {
   try {
-    console.log('inhere')
     const url = await Url.findOne({where: {shortCode: req.params.code}})
     if (url) {
       return res.redirect(url.original)

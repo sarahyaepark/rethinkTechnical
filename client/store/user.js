@@ -6,11 +6,6 @@ import axios from 'axios'
 const GET_USERS = 'GET_USERS'
 
 /**
- * INITIAL STATE
- */
-const defaultUser = {}
-
-/**
  * ACTION CREATORS
  */
 const gotUsers = data => ({type: GET_USERS, data})
