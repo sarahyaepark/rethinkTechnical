@@ -1,6 +1,8 @@
 const router = require('express').Router()
 module.exports = router
 
+// these routes sit on top of /api
+
 router.use('/users', require('./users'))
 router.use('/url', require('./url'))
 
